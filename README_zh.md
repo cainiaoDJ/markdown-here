@@ -1,12 +1,14 @@
 # ![Markdown Here logo](https://raw.github.com/adam-p/markdown-here/master/src/common/images/icon48.png) Markdown Here
 
-[**Visit the website.**](http://markdown-here.com)  
-[**Get it for Chrome.**](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa)  
-[**Get it for Firefox.**](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/)  
-[**Get it for Safari.**](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz)  
-[**Get it for Thunderbird and Postbox.**](https://addons.mozilla.org/en-US/thunderbird/addon/markdown-here/)  
-[**Get it for Opera.**](https://addons.opera.com/en/extensions/details/markdown-here/)  
-[**Discuss it and ask questions in the Google Group.**](https://groups.google.com/forum/?fromgroups#!forum/markdown-here/)
+*约定：*  本人将`Markdown Here`翻译为『马克飞呀』，下同 
+
+[**访问我们的网站.**](http://markdown-here.com)  
+[**获取 Chrome 版本**](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa)  
+[**获取 Firefox 版本**](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/)  
+[**获取 Safari 版本**](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz)  
+[**获取 Thunderbird 和 Postbox版本**](https://addons.mozilla.org/en-US/thunderbird/addon/markdown-here/)  
+[**获取 Opera 版本**](https://addons.opera.com/en/extensions/details/markdown-here/)  
+[**在谷歌团队协作中讨论和咨询**](https://groups.google.com/forum/?fromgroups#!forum/markdown-here/)
 
 *Markdown Here* 是一个 Google Chrome, Firefox, Safari, Opera, 和 Thunderbird 中的插件，方便你在写邮件时使用Markdown语法，而且在发送之前可以预览. 与此同时他还支持语法高亮 （只需在代码区域内添加代码块）。
 
@@ -19,60 +21,60 @@
 
 ![screenshot of conversion](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
 
-### Table of Contents
-**[Installation Instructions](#installation-instructions)**  
-**[Usage Instructions](#usage-instructions)**  
-**[Troubleshooting](#troubleshooting)**  
-**[Compatibility](#compatibility)**  
-**[Notes and Miscellaneous](#notes-and-miscellaneous)**  
-**[Building the Extension Bundles](#building-the-extension-bundles)**  
-**[Next Steps, Credits, Feedback, License](#next-steps)**  
+### 目录
+**[安装说明](#installation-instructions)**  
+**[使用说明](#usage-instructions)**  
+**[故障排除](#troubleshooting)**  
+**[兼容性](#compatibility)**  
+**[注释和杂项](#notes-and-miscellaneous)**  
+**[构建扩展包](#building-the-extension-bundles)**  
+**[后续计划，贡献，反馈，许可证](#next-steps)**  
 
-## Installation Instructions
+## 安装说明
 
 ### Chrome
 
-#### Chrome Web Store
+#### Chrome 应用商店
 
-Go to the [Chrome Web Store page for *Markdown Here*](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa) and install normally.
+访问 [Chrome 应用商店中的 *Markdown Here*](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa) and install normally.
 
-After installing, make sure to reload your webmail or restart Chrome!
+安装完成之后，请确保重新加载邮件页面或者重新加载 Chrome 浏览器!
 
-#### Manual/Development
+#### 手册/开发
+*扩展可以理解为插件*
+1. 克隆这个仓库。
+2. 在Chrome中，打开扩展设置。（扳手按钮，工具，扩展）。
+3. 在扩展设置页面， 点击选中“开发者模式”。
+4. 点击刚刚出现的 『加载已解压的扩展程序...』 按钮。 导航到你刚才克隆源码的目录， 然后选中目下的`src`文件夹.
+5. 现在*Markdown Here* 扩展已经就会出现在你的扩展列表了.
+6. 在你准备转换邮件之前，重新加载页面(也可能是一个应用) 。
 
-1. Clone this repo.
-2. In Chrome, open the Extensions settings. (Wrench button, Tools, Extensions.)
-3. On the Extensions settings page, click the "Developer Mode" checkbox.
-4. Click the now-visible "Load unpacked extension…" button. Navigate to the directory where you cloned the repo, then the `src` directory under that.
-5. The *Markdown Here* extension should now be visible in your extensions list.
-6. Reload your webmail page (and maybe application) before trying to convert an email.
+### Firefox（火狐：浏览器） and Thunderbird（雷鸟：邮件客户端）
 
-### Firefox and Thunderbird
+#### Mozilla 附加组建网站
 
-#### Mozilla Add-ons site
+访问 [火狐附加组件中的 *Markdown Here*](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/) 并且执行安装.
 
-Go to the [Firefox Add-ons page for *Markdown Here*](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/) and install normally.
+或者点击"工具 > 附加组件..." 菜单，然后搜索 "Markdown Here".
 
-Or go to the "Tools > Add-ons" menu and then search for "Markdown Here".
+安装完成之后, 请确保重启了 Firefox 或 Thunderbird!
 
-After installing, make sure to restart Firefox/Thunderbird!
+**备注：** Mozilla最长需要一个月才能批准对Firefox / Thunderbird扩展的更改, 因此更新(功能, 修复) 将会滞后于现在显示在本页面的说明。 您可以手动选择安装最新版本，然后再从版本列表中进行审核: [https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/)
 
-**Note:** It takes up to a month for Mozilla to approve changes to the Firefox/Thunderbird extension, so updates (features, fixes) will lag behind what is shown here. You can manually choose to install the newest version before it's reviewed from the list of versions: [https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/)
+#### 手册/开发
 
-#### Manual/Development
-
-1. Clone this repo.
-2. Follow the instructions in the MDN ["Setting up an extension development environment"](https://developer.mozilla.org/en/Setting_up_extension_development_environment) article.
+1. 克隆这个仓库。
+2. 按照MDN中的说明操作 ["设置扩展开发环境"](https://developer.mozilla.org/en/Setting_up_extension_development_environment) 。
 
 ### Safari
 
-[Download the extension directly.](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz) When it has finished downloading, double click it to install. 
+[直接下载这个扩展。](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz) 下载完毕后，双击安装。 
 
-#### Preferences
+#### 偏好设置
 
-To get to the Markdown Here preferences, open the Safari preferences and then go to the "Extensions" tab. Then click the "Click me to show Markdown Here options" box.
+要想设置 Markdown Here 偏好设置， 打开 *Safari偏好设置* 然后点击扩展标签页，然后点击 "Click me to show Markdown Here options" 单选框。 
 
-### Opera
+### 欧朋浏览器
 
 Note that *Markdown Here* only works with Opera versions 16 and higher (i.e., the ones that are based on Chromium).
 
@@ -80,7 +82,7 @@ Go to the [Opera Add-ons store page for *Markdown Here*](https://addons.opera.co
 
 After installing, make sure to reload your webmail or restart Chrome!
 
-## Usage Instructions
+## 使用说明
 
 Install it, and then…
 
